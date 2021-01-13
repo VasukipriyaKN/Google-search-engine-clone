@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    user-select: none;
+}
+
+.top {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 30px;
+    align-items: center;
+    width: 250px;
+    justify-content: space-between;
+}
+.topText {
+    display: flex;
+    margin: 5px;
+}
+.topText a {
+    margin: 5px;
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    transition-duration: 0.3s;
+    transition-property: color,text-decoration;
+}
+.topText a:hover {
+    color: black;
+    text-decoration: underline;
+    transition-duration: 0.3s;
+    transition-property: color,text-decoration;
+}
+.closedGrid img {
+    filter: grayscale(1);
+    position: relative;
+    left: -0.5rem;
+
+}
+.closedGrid img:hover {
+    filter: contrast(1);
+    
+}
+
+.openGrid ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(119, 119, 119);
+    border-radius: 8px;
+
+}
+
+#openGrid {
+    display: none;
+}
+.openGrid {
+    position: absolute;
+    margin-left: -30%;
+    margin-top: 300px;
+}
+
+.openGrid ul li {
+    margin: 3px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    width: 70px;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+.openGrid ul li:hover {
+    background-color: rgb(211, 219, 253);    
+    
+}
+.openGrid ul li a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+    font-size: 0.9em;
+}
+
+.mainIcon img {
+    position: relative;
+    top: 30vh;
+    left: 40vw;
+    cursor: none;
+}
+
+.searchBar {
+    position: relative;
+    top: 35vh;
+    left: 33vw;
+    border: 1.5px solid rgb(228, 228, 228);
+    width: 40.5vw;
+    height: 6vh;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4px;
+    transition-duration: 0.2s;
+    transition-property: box-shadow;
+}
+
+.searchBar:hover {
+    box-shadow: 0px 1px 5px 0px silver;
+    transition-duration: 0.2s;
+    transition-property: box-shadow;
+}
+.searchBar img {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0vh;
+    margin: 5px;
+    filter: grayscale(1);
+}
+#input {
+    padding: 0rem;
+    width: 34.8vw;
+    height: 4vh;
+    position: relative;
+    top: -6px;
+    justify-content: stretch;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.gButtons {
+    position: relative;
+    top: 38vh;
+    left: 43vw;
+    display: flex;
+    width: 22vw;
+    justify-content: space-between;
+    user-select: unset;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    cursor: text;
+}
+.gButtons a {
+    text-decoration: none;
+
+    background-color: #F8F9FA;
+    padding: 0.9rem;
+    letter-spacing: 0.07rem;
+    border-radius: 2px;
+    color: #202124;
+}
+.gButtons a:hover {
+    box-shadow: 0px 0px 3px 0px rgb(156, 156, 156);;
+}
+
+.languages {
+    display: flex;
+    width: 500px;
+    position: relative;
+    top: 45vh;
+    left: 45vw;
+    align-items: center;
+    color: #202124;
+}
+
+.languages ul {
+    list-style: none;
+    display: flex;
+    width: 100px;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: 1%;
+}
+.languages ul li {
+    margin: 3px;
+}
+
+.languages ul li a {
+    text-decoration: none;
+    color: #1A0DBE;
+    font-size: 15px;
+}
+.languages h5 {
+    font-size: 15px;
+    align-items: center;
+    position: relative;
+    
+}
+.footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 70px;
+    margin: 0%;
+    align-items: center;
+    padding-left: 2%;
+    padding-top: 1%;
+    color: #202124;
+}
